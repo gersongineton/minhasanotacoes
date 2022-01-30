@@ -1,0 +1,141 @@
+Estrutura De dados
+É uma Estutura organizada de dados na memoria, de forma que possam ser utilizados da forma correta.
+
+Algorítimo
+-------------------------------------
+É um conjunto de instruções estruturadas para realizar uma tarefa.
+
+Vetores e Matrizes - Arrays
+-------------------------------------
+São estruturas de dados indexada, simples, que podem armazenar uma determinada quantidate de valores do mesmo e tipo, pode auxiliar quando há muitas variáveis do mesmo tipo em um algorítimo, por exemplo. Os arrays podem ser uni ou multi-dimensionais.
+
+Ex: 
+	inteiro numeros[] = {39, 45,54,55}
+	escreva(numeros[0])
+
+	Resultado= 39
+
+-- Imprimindo todos os valores 
+	
+	para (inteiro posicao = 0; posicao <=3; posicao++){
+		escreva(numeros[posicao],"/n")
+	}
+
+
+Registros
+-------------------------------------
+Os registros fornecem uma estrutura diferente dos arrays, sendo possível armazenar mais de um tipo de dados. Para acessar os campos de um registro podemos utilzar seu nome, seguido de um separador mais o campo. 
+Ex: clientes.cpf
+
+
+
+Listas
+-------------------------------------
+Estruturas de dados que armazenam dados de forma específica. Possuem tamanhs ajustáveis, diferente dos arrays. As listas podem ser definidas como Ligadas ou Duplamente Ligadas.
+
+	Ligada: 
+	Nesse tipo de lista, cada um dos nós, conhece o valor armazenado em si mesmo alem de conecher o elemento posterior a a ele, sempre tendo a indicação de qual é o proximo nó.
+
+	Duplamente Ligada:
+	Diferente das Ligadas, essas são bidirecionais, pois nesse caso, o nós sabem quem é o elemento posterio e também o anterior, permitindo assim a navegação reversa.
+
+Pilhas
+-------------------------------------
+A pilha é uma coleção de elementos, que permite o acesso a apenas um item de dados armazenados por vez.
+Apenas um item pode ser lido ou removido por vez.
+
+	LIFO/UEPS
+	Primeiro elemento a ser retirado é o ultimo que foi inserido.
+
+	FIFO/PEPS
+	Primeiro elemento a ser retirado é o primeiro que foi inserido.
+
+Filas
+-------------------------------------
+
+
+Arvores
+Elemento de forma hierarquicas
+- Raiz
+- Folhas
+Facilita a busca
+
+-----------------------------------------------------------------------------------------------------------------------
+Git Hub
+
+SHA1
+-------------------------------------
+-Secure Hash Algorithm
+-Conjunto de funções hash criptográficas,  projetadas pela Agencia de Segurança Nacional dos EUA.
+-Conjunto de characteres identificador de 40 dígitos.
+-Forma curta de representar um arquivo.
+
+openssl sha1 Bootcamp.txt
+
+Objetos Fundamentais
+-------------------------------------
+Blobs - Guarda o sha do arquivo
+Tree - Armazena Blobs, guarda o sha e o nme dos arquivos e possui sha propria é alterada se um dos arquivos for alterado
+Commit - o SHA1 do commit é o hash de toda a informação. Contem a Tree, parente, autor, mensagem e timestamp
+
+Chave SSH e Token
+-------------------------------------
+Chave SSH Fornece uma comunicação segura e privada
+
+Criar chave SSH
+$ ssh-keygen -t ed25519 -C gersongineton@gmail.com
+Iniciar o Agente
+$ eval $(ssh-agent -s)
+$ ssh-add id_ed25519
+Clonar Repositorio
+$ git clone ---caminho SSH
+
+Token de acesso pessoal
+Usuário e senha
+
+Configurar name
+-------------------------------------
+$ git config --global user.email "gersongineton@gmail.com"
+$ git config --global user.name Gerson
+
+Remover cofiguracoes
+-------------------------------------
+$ git config --global --unset user.name
+
+Verificar gonfiguração
+-------------------------------------
+$ git config --list
+
+
+Inicindo o Git e criando um Commit
+-------------------------------------
+$ git init - Inicialisa o repositorio
+$ git add - Move os arquivos para a stage
+$ git commit - coloca os arquivos no repositprio local
+$ git push origin master - empurrar os aquivos para o repositório
+$ git pull origin master - puxa os aquivos do repositório
+$ git status
+
+Indicar repositório Remoto
+-------------------------------------
+$ git remote add origin git@github.com:gersongineton/aulagit.git
+
+
+Resolvendo conflitos
+-------------------------------------
+
+Baixar o que está no repositório remoto, comparar com o local, corrigir e empurrar o correto.
+
+-----------------------------------------------------------------------------------------------------------------------
+
+SCRUM
+
+Processo de desenvolvimento
+-------------------------------------
+Concepçao
+Análise e Design
+Desenvolvimento
+Testes
+Implantação
+
+
