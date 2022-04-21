@@ -84,8 +84,12 @@ Chave SSH Fornece uma comunicação segura e privada
 
 Criar chave SSH
 $ ssh-keygen -t ed25519 -C gersongineton@gmail.com
+Copiar a chave SSH para colocar no GitHub
+$ cat /c/Users/Gerson/.ssh/id_ed25519.pub
 Iniciar o Agente
 $ eval $(ssh-agent -s)
+Entrar no diretório criado
+cd c:/Users/Gerson/.ssh
 $ ssh-add id_ed25519
 Clonar Repositorio
 $ git clone ---caminho SSH
@@ -96,7 +100,7 @@ Usuário e senha
 Configurar name
 -------------------------------------
 $ git config --global user.email "gersongineton@gmail.com"
-$ git config --global user.name Gerson
+$ git config --global user.name gersongineton
 
 Remover cofiguracoes
 -------------------------------------
@@ -109,9 +113,9 @@ $ git config --list
 
 Inicindo o Git e criando um Commit
 -------------------------------------
-$ git init - Inicialisa o repositorio
+$ git init - Inicializgit a o repositorio
 $ git add - Move os arquivos para a stage
-$ git commit - coloca os arquivos no repositprio local
+$ git commit -m "Mensagem" - coloca os arquivos no repositprio local
 $ git push origin master - empurrar os aquivos para o repositório
 $ git pull origin master - puxa os aquivos do repositório
 $ git status
@@ -138,4 +142,16 @@ Desenvolvimento
 Testes
 Implantação
 
+
+-----------------------------------------------------------------------------------------------------------------------
+JavaScript
+
+Interpretada
+Baseada em Protótipos
+Multiparadigma
+Comumente utilizada em WEB client-side(interação com o Usuário)
+Segue o padrão ECMAScript
+
+Variável
+Constante
 
